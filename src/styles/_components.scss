@@ -1,0 +1,50 @@
+@import "colors";
+
+/* Element */
+.container {
+  padding: 2rem;
+}
+
+input,
+button {
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 1px solid $light-grey;
+}
+
+input:disabled {
+  background-color: $lighter-grey;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+
+  &-dark-blue {
+    background-color: $prussian-blue;
+    color: white;
+  }
+  &-light-blue {
+    background-color: $pewter-blue;
+    color: black;
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  &:focus {
+    outline: 0.1rem solid $pewter-blue;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
