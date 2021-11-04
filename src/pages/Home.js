@@ -26,7 +26,7 @@ class Home extends React.Component {
     };
 
     try {
-      fetch("http://localhost:3000/api/url/shorten", requestOptions)
+      fetch("api/url/shorten", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {
@@ -55,7 +55,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="container row">
-        <div className="col-6">
+        <div className="col-6 p-2">
           <form onSubmit={this.handleSubmit}>
             <div className="row">
               <input
@@ -96,7 +96,8 @@ class Home extends React.Component {
             <small>URL copied to clipboard</small>
           )}
         </div>
-        <div className="col-6">
+        <div className="col-6 p-2">
+          <h3>Generated URL</h3>
           <List></List>
         </div>
       </div>

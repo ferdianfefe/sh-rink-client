@@ -28,7 +28,7 @@ export default class List extends React.Component {
     };
 
     try {
-      fetch("http://localhost:3000/api/url/list", requestOptions)
+      fetch("/api/url/list", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {

@@ -21,7 +21,7 @@ class UrlForm extends React.Component {
     };
 
     try {
-      fetch("http://localhost:3000/api/url/shorten", requestOptions)
+      fetch("/api/url/shorten", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           this.setState({

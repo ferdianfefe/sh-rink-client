@@ -26,7 +26,7 @@ export default function SignUp() {
     };
 
     try {
-      fetch("http://localhost:3000/api/auth/signin", requestOptions)
+      fetch("/api/auth/signin", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           if (!data.success) {

@@ -28,7 +28,7 @@ export default function SignUp() {
     };
 
     try {
-      fetch("http://localhost:3000/api/auth/signup", requestOptions)
+      fetch("/api/auth/signup", requestOptions)
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
